@@ -1,0 +1,266 @@
+/* orange -> #fc6e20 */
+/* black -> #1b1b1b */
+/* grey -> #323232 */
+/* peach -> #ffe7d0 */
+:root {
+  --grey: #323232;
+  --black: #1b1b1b;
+  --peach: #ffe7d0;
+  --orange: #fc6e20;
+}
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #323232;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--peach);
+}
+.left-main {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 50vh;
+    margin-right: 50px;
+    margin-left: 200px;
+    background-color: #1b1b1b
+}
+.right {
+  height: 237vh;
+  width: 100vh;
+  background-color: #1b1b1b;
+}
+.foto {
+  width: 100%;
+  margin-top: 30px;
+  height: 35%;
+  text-align: center;
+}
+.foto img {
+  width: 270px;
+  height: 270px;
+  border-radius: 200px;
+}
+.naam {
+  text-align: center;
+}
+.naam h1 {
+  color: #fc6e20;
+  font-family: "Averia Serif Libre", cursive;
+}
+/*  */
+.typeText {
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.typeText h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  color: #ffe7d0;
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 24px;
+  border-right: .15em solid #ffe7d0; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 10px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 1px; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+ 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  30% { border-color: #ffe7d0; }
+}
+.skills-l {
+  width: 100%;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+.skills-l h1{
+  color: #fc6e20;
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 32px;
+}
+.cpbar {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  padding: 0px 10%;
+}
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color:  #fc6e20 !important;
+}
+.progress {
+  display: flex;
+  height: 0.8rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: var(--grey);
+}
+.mx-2 {
+  color: var(--peach);
+  text-decoration: none;
+  background-color: transparent;
+}
+.mx-2:hover {
+  color: var(--peach);
+}
+.right {
+  padding: 0px 2%;
+}
+.col-12 h2{ 
+  color: var(--peach);
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 38px;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: var(--orange);
+}
+.text-primary {
+  color: var(--orange) !important;
+  font-family: "Averia Serif Libre", cursive;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: var(--peach) !important;
+  font-size: 1em !important;
+}
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 50px;
+}
+.pb-5, .py-5 {
+  padding-bottom: 3rem !important;
+  padding-left: 0;
+}
+.bg-white {
+  background-color: rgba(0,0,0,0) !important;
+}
+.col-12 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.webt {
+  font-size: 1.5rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.service-item i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--peach) !important;
+  border-radius: 75px;
+  color: var(--peach);
+  transition: .5s;
+}
+.service-item i:hover {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--peach) !important;
+  border-radius: 75px;
+  background-color: var(--peach);
+  color: var(--black);
+  transition: .5s;
+}
+.mr-2, .mx-2 {
+  margin-right: 0.5rem !important;
+  border-radius: 0px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--orange);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  border-radius: 0rem;
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: var(--orange);
+  color: var(--black);
+  border: none;
+}
+#cpp {
+  animation: cpp 3s;
+}
+@keyframes cpp {
+  0% { 
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+#html {
+  animation: html 3s;
+}
+@keyframes html {
+  0% { 
+    width: 0%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+#css {
+  animation: css 3s;
+}
+@keyframes css {
+  0% { 
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
